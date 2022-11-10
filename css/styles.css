@@ -1,7 +1,13 @@
 :root {
-  --primary-color: #ffffff;
-  --second-color: #212121;
-  --accent-color: #2196f3;
+  --primary-header-color: #212121;
+  --second-header-color: #757575;
+  --accent-header-color: #2196f3;
+  --primary-body-color: #ffffff;
+  --second-body-color: #212121;
+  --accent-body-color: #2196f3;
+  --primary-footer-color: #ffffff;
+  --second-footer-color: #2f303a;
+  --accent-footer-color: #2196f3;
 }
 body {
   font-family: 'Roboto', 'Raleway';
@@ -18,7 +24,7 @@ body {
   text-decoration: none;
 }
 .web {
-  color: #2196f3;
+  color: var(--accent-header-color);
 }
 .list {
   list-style: none;
@@ -28,7 +34,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--primary-header-color);
   text-decoration: none;
 }
 .header-tel {
@@ -36,14 +42,14 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--second-header-color);
   text-decoration: none;
 }
 .header-link:hover,
 .header-link:focus,
 .header-tel:focus,
 .header-tel:hover {
-  color: #2196f3;
+  color: var(--accent-header-color);
 }
 /* ---------Body---------- */
 .hero {
@@ -60,18 +66,17 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-body-color);
 }
 .hero-button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--second-body-color);
   width: 216px;
   height: 50px;
   left: 692px;
@@ -82,8 +87,8 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--accent-body-color);
+  color: var(--primary-body-color);
 }
 .tittle-opportunity {
   font-weight: 700;
@@ -91,7 +96,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--second-body-color);
 }
 .text-opportunity {
   font-weight: 400;
@@ -106,7 +111,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--second-body-color);
 }
 /* ---------Section Наша Команда---------- */
 .hero-team {
@@ -118,7 +123,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--second-body-color);
 }
 .tittle-team-worker {
   font-weight: 500;
@@ -126,7 +131,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--second-body-color);
 }
 .list-worker {
   width: 270px;
@@ -142,12 +147,12 @@ body {
   color: #757575;
 }
 /* --------footer---------- */
-.footer {
+.basement {
   width: 1600px;
   height: 252px;
   left: 0px;
   top: 2094px;
-  background: #2f303a;
+  background: var(--second-footer-color);
 }
 .logo-footer {
   font-family: 'Raleway';
@@ -155,7 +160,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primary-footer-color);
   text-decoration: none;
 }
 .list-address {
@@ -163,7 +168,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primary-footer-color);
   text-decoration: none;
 }
 .list-tel {
@@ -175,11 +180,11 @@ body {
 }
 .list-tel:hover,
 .list-tel:focus {
-  color: #2196f3;
+  color: var(--accent-footer-color);
 }
 .list-address:hover,
 .list-address:focus {
-  color: #2196f3;
+  color: var(--accent-footer-color);
 }
 /* ---------Body Portfolio---------- */
 .portfolio-btn {
@@ -189,7 +194,7 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--second-body-color);
   height: 38px;
   left: 548px;
   top: 174px;
@@ -200,14 +205,14 @@ body {
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background: #2196f3;
-  color: #ffffff;
+  color: var(--primary-body-color);
 }
 .portfolio-tittle {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--second-body-color);
 }
 .portfolio-text {
   font-size: 16px;
